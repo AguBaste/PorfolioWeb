@@ -38,29 +38,24 @@ function encriptar(){
         .replace(/a/gi,"ai")
         .replace(/u/gi,"ufat");
         document.getElementById('texto').value = mensCifrado;
-        let btn = document.getElementById('boton');
-        btn.innerHTML = 'desencriptar';
-        btn.classList.remove('bg-info');
-        btn.classList.add('bg-primary');
     }else{
         alert('Debes ingresar texto para encriptar o desencriptar');
     }
-    
-    
-    function desencriptar(){
-        let texto = document.getElementById('texto').value;
-        if(texto.length != 0){
-            let mensCifrado = texto
-            .replace(/enter/gi,"e")
-            .replace(/imes/gi,"i")
-            .replace(/ober/gi,"o")
-            .replace(/ai/gi,"a")
-            .replace(/ufat/gi,"u");
-            document.getElementById('texto').value = mensCifrado;
-        }else{
-            alert('Debes ingresar texto para encriptar o desencriptar');
-        }
-    }s
+}
+
+function desencriptar(){
+    let texto = document.getElementById('texto').value;
+    if(texto.length != 0){
+        let mensCifrado = texto
+        .replace(/enter/gi,"e")
+        .replace(/imes/gi,"i")
+        .replace(/ober/gi,"o")
+        .replace(/ai/gi,"a")
+        .replace(/ufat/gi,"u");
+        document.getElementById('texto').value = mensCifrado;
+    }else{
+        alert('Debes ingresar texto para encriptar o desencriptar');
+    }
 }
     
     
